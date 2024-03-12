@@ -1,0 +1,8 @@
+<div class="container col">
+    <h1>Adivina el número</h1>
+    <p class="lead">Introduce un número entre 1 y 100:</p>
+    <input type="number" class="form-control" [(ngModel)]="numeroIngresado" [disabled]="inputDisabled" id="numero">
+    <button class="btn btn-success" (click)="resultado()">Comprobar</button>
+    <p id="mensaje" [style.color]="mensajeColor">{{ mensaje }}</p>
+    <h4>Cantidad de intentos: <p id="intento">{{ intentos }}</p></h4>
+</div>
