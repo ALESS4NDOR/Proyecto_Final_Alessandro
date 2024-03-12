@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Lista de Pokémon</h1>
+    <ul class="list-group">
+      <li *ngFor="let pokemon of pokemons" class="list-group-item">
+        <img src="assets/img/{{ pokemon.image }}" alt="{{ pokemon.name }}">
+        {{ pokemon.name }}
+      </li>
+    </ul>
+    <button class="btn btn-primary">Filtrar</button>
+</div>
