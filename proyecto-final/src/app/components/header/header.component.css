@@ -1,0 +1,20 @@
+:host {
+    display: block;
+    grid-area: header;
+    width: auto;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Establece un valor alto para asegurarte de que esté por encima */
+}
+
+.btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+li {
+    margin: 0px 10px;
+}

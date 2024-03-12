@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container">
+        <a class="navbar-brand" routerLink= "/home">
+            <img src="./assets/img/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <button class="btn btn-outline-secondary" aria-current="page" routerLink="/home">Home</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-secondary" routerLink="/lista-tareas">Lista de Tareas</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-secondary" routerLink="/calculadora">Calculadora</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-secondary" routerLink="/adivina-numero">Adivina el Número</button>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" #searchTerm placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit" (click)="buscar(searchTerm.value)">Buscar</button>
+            </form>
+        </div>
+    </div>
+</nav>
